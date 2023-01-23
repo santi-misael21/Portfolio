@@ -8,7 +8,7 @@ router.get('/d', async (req, res)=>{
 
     try{
         
-        let r = await axios("https://api.vercel.com/v6/deployments", {
+        let r = await axios("https://api.vercel.com/v6/deployments?limit=100", {
             "headers": {
                 "Authorization": `Bearer SHAwmBUhM3z3wKg7qJo9iOCa`,
                 "Content-Type": "application/json"
